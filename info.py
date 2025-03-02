@@ -38,7 +38,7 @@ PORT = int(environ.get('PORT', '80'))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/1fb2737b898727d51bc94.jpg')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '(6112399514 1884903409 1096374497 7960202005)')
+ADMINS = environ.get('ADMINS', '6112399514 1884903409 1096374497 7960202005')
 if len(ADMINS) == 0:
     print('Error - ADMINS is missing, exiting now')
     exit()
@@ -113,7 +113,7 @@ SHORTLINK = is_enabled('SHORTLINK', True)
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', False)
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002343644632")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "")
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
     exit()
